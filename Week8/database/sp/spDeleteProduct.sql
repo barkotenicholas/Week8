@@ -1,0 +1,6 @@
+CREATE
+OR ALTER PROCEDURE spDeleteProduct @id VARCHAR(200) AS BEGIN
+UPDATE Products
+SET isDeleted = 1
+WHERE id = @id
+END

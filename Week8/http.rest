@@ -1,0 +1,73 @@
+###
+POST http://localhost:7000/auth/login
+Content-Type: application/json
+
+{
+    "email":"a@gmail.com",
+    "password": "password"
+}
+
+###
+POST http://localhost:7000/auth/signup
+Content-Type: application/json
+
+{
+    "email":"a@gmail.com",
+    "firstname":"Allan",
+    "lastname" : "namu",
+    "password": "password"
+}
+
+###
+POST http://localhost:7000/product
+Content-Type: application/json
+
+{
+    "id":"randomid",
+    "name":"Table",
+    "description":"best table in town",
+    "imageurl":"randomurl",
+    "price":123,
+    "discount":10
+}
+
+###
+GET http://localhost:7000/product
+
+
+###
+POST http://localhost:7000/cart
+Content-Type: application/json
+
+{
+            "uid": "f7dd0d7b-558c-4206-8170-cbac8b20c543",
+            "quantity": 1,
+            "pid": "randomid",
+            "pname": "Table",
+            "pdesc": "best table in town",
+            "pprice": 123,
+            "pdiscount": 10
+}
+
+###
+GET http://localhost:7000/cart
+Content-Type: application/json
+
+{
+    "uid":"f7dd0d7b-558c-4206-8170-cbac8b20c543"
+}
+###
+PATCH http://localhost:7000/cart
+Content-Type: application/json
+
+{   
+    "user_id": "f7dd0d7b-558c-4206-8170-cbac8b20c543",
+    "quantity": 1,
+    "product_id": "randomid",
+    "product_name": "Table",
+    "product_desc": "best table in town",
+    "product_price": 123,
+    "product_dicount": 10,
+    "isDeleted": 0,
+    "imageurl": null
+}

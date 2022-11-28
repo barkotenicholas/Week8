@@ -1,0 +1,73 @@
+.head{
+    text-align: center;
+    
+}
+.card{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+    margin: 20px;
+}
+.body{
+    width: auto ;
+}
+.discount{
+    text-decoration: line-through;
+}
+.nocart{
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+.img{
+    width: 130px;
+    height: 130px;
+    margin: 15px;
+    border-radius: 15px;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid lightblue;
+    border-radius: 20px;
+    padding: 20px;
+}
+.addDelete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.delete{
+    color: red;
+}
+.add{
+    color: black;
+}
+.delete{
+    color: black;
+}
+.topInfo{
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+.loading{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
